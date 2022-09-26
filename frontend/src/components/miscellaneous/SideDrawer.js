@@ -138,8 +138,8 @@ const SideDrawer = () => {
         w="100%"
         p="5px 10px 5px 10px"
         borderWidth="5px"
-        borderColor="purple.600"
-        bg="yellow.400"
+        borderColor="grey"
+        bg="white"
         color="black"
       >
         <Tooltip label="Search Users to chat" hasArrow placement="bottom-end">
@@ -185,16 +185,16 @@ const SideDrawer = () => {
           <Menu>
             <MenuButton as={Button} bg="blue.700"  rightIcon={<ChevronDownIcon/>}  
               _hover={{background: "purple.800", color:"yellow.400"}} _active={{background: "purple.800", color:"yellow.400"}}>
-              <Avatar size="sm" cursor="pointer" name={user.name} borderColor="black" borderWidth="2px" bg="yellow.400" color="black"/>
+              <Avatar size="sm" cursor="pointer" name={user.name} borderColor="black" borderWidth="2px" bg="white" color="black"/>
             </MenuButton>
-            <MenuList bg = "purple.600" borderColor="black" borderWidth="2px">
+            <MenuList bg = "white" borderColor="black" borderWidth="2px">
               <ProfileModal user={user}>
-                <MenuItem fontWeight="bold" color="black" _hover={{background: "yellow.400"}}  >
+                <MenuItem fontWeight="bold" color="black" _hover={{background: "lightgrey"}}  >
                   My Profile
                 </MenuItem>{" "}
               </ProfileModal>
               <MenuDivider/>
-              <MenuItem fontWeight="bold" color="black" onClick={logoutHandler} _hover={{background: "yellow.400"}}>
+              <MenuItem fontWeight="bold" color="black" onClick={logoutHandler} _hover={{background: "lightgrey"}}>
                 Logout
               </MenuItem>
             </MenuList>

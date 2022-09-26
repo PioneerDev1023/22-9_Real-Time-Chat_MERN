@@ -268,7 +268,7 @@ const UpdateGroupChatModal = ({  fetchAgain, setFetchAgain, fetchMessages }) => 
             </FormControl>
             <FormControl>
               <Input
-                placeholder="Add User to group"
+                placeholder="Add User to team"
                 mb={1}
                 onChange={(e) => handleSearch(e.target.value)}
               />
